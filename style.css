@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+h3{
+    font-size: 40px;
+}
+p{
+    font-size: 30px;
+}
+#full{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 2%;
+}
+i{
+    font-size: 20px;
+    color: black;
+}
+#edit{
+    color: green;
+}
+#del{
+    color: red;
+}
+.adding{
+    background-color: lightgreen;
+}
+.checks{
+    font-size: 30px;
+    height: 60px;
+    width: 120px;
+    border: 2px solid seagreen;
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.alert{
+    position: fixed;
+    top: -2%;
+}
+.textcenter{
+    box-shadow: 0px 0px 10px black;
+    width: 60vw;
+    height: 80vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    background-color: #fff3;
+    position: relative;
+}
+.main {
+    width: 90%;
+    /* height: ; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+    gap: 5%;
+    position: relative;
+    height: 90%;
+  }
+.text-info {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+  }
+input{
+    font-size: 2vw;
+    padding: 5px 10px;
+    border: 2px solid skyblue;
+    height: 100%;
+    width: 75%;
+    color: black;
+}
+form{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.danger{
+    background-color: red;
+}
+.success{
+    background-color: green;
+}
+.normal{
+    background-color: blue;
+}
+.bf{
+    background-color: black;
+    color: white;
+}
+#submitbtn{
+    width: 30%;
+    height: 100%;
+    background-color: skyblue;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.formelemet{
+    width: 60%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: skyblue;
+
+}
+.grocerylist{
+    margin-top: 10%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    height: auto;
+}
+#editbtn{
+    display: none;
+}
+#countelem{
+    font-size: 30px;
+
+}
+label{
+    font-size: 28px;
+}
+#count{
+    font-size: 20px;
+    position:absolute;
+    right: -3%;
+    top: -5%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.item{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0px 0px 0px 5px yellow;
+    padding: 10px 5px;
+}
+.item p {
+    width: 60%;
+    word-wrap: break-word;
+  overflow-wrap: break-word;
+  }
+.checkeditem{
+    box-shadow: 0px 0px 0px 5px green !important;
+}
+.inside-button{
+    display: flex;
+    gap: 10%;
+    align-items: center;
+    width: 30%;
+}
+.checks{
+    width: 20px;
+    height: 20px;
+}
+#clear{
+    padding: 15px;
+    border: 2px solid black;
+    background-color: skyblue;
+    font-size: 20px;
+    margin-top: 50px;
+}
+@media (max-width: 1650px) {
+    .textcenter{
+        width: 75vw;
+    }
+    .formelemet{
+        height: 70px
+    }
+    .main{
+        gap: 10%;
+    }
+    #count{
+        right: 1%;
+    }
+}
+@media (max-width: 1150px) {
+    .formelemet{
+        width: 70%;
+        height: 100px;
+    }
+    .textcenter{
+        box-shadow: 0px 0px 0px black;
+        width: 85vw;
+        height: 100vh;
+        padding: 1vw;
+
+    }
+    #count{
+        right: 3%;
+    }
+    input{
+        width: 80%;
+        font-size: 28px;
+    }
+    #submitbtn{
+        width: 35%;
+    }
+    .main{
+        justify-content: flex-start;
+        gap: 5%;
+        width: 100%;
+        height: 80%;
+    }
+    .grocerylist{
+        margin-top: 2vmax;
+        gap: 20px;
+    }
+    .text-info{
+        height: 38%;
+    }
+
+}
+@media (max-width:1000px) {
+    .textcenter{
+        width: 100vw;
+        height: 100vh;
+    }
+    .formelemet{
+        width: 90%;
+        height: 110px;
+    }
+    
+    input{
+        font-size: 18px;
+    }
+    .inside-button {
+        display: flex;
+        gap: 15%;
+        align-items: center;
+        width: 34%;
+    }
+    .item p{
+        font-size: 50px;
+    }
+    #submitbtn{
+        font-size: 50px;
+    }
+    i{
+        font-size: 50px;
+    }
+    input{
+        font-size: 45px;
+    }
+    .checks{
+        width: 45px;
+        height: 45px;
+    }
+    #clear{
+        font-size: 50px;
+    }
+    label{
+        font-size: 48px;
+    }
+    #countelem{
+        font-size: 48px;
+    }
+    #count{
+        top: -60px;
+    }
+    .main{
+        padding-top: 20px;
+    }
+    
+    
+}
+@media (max-width: 700px) {
+    .textcenter{
+        width: 100vw;
+        height: 100vh;
+    }
+    .text-info{
+        height: 25%;
+    }
+    .formelemet{
+        width: 90%;
+    }
+    input{
+        font-size: 18px;
+    }
+    .inside-button {
+        display: flex;
+        gap: 15%;
+        align-items: center;
+        width: 34%;
+    }
+    .item p{
+        font-size: 28px;
+    }
+    #submitbtn{
+        font-size: 20px;
+    }
+    i{
+        font-size: 20px;
+    }
+    input{
+        font-size: 25px;
+    }
+    .checks{
+        width: 25px;
+        height: 25px;
+    }
+    #clear{
+        font-size: 20px;
+    }
+    label{
+        font-size: 28px;
+    }
+    #countelem{
+        font-size: 28px;
+    }
+    #count{
+        top: -2%;
+    }
+    .main{
+        padding-top: 20px;
+    }
+    
+}
