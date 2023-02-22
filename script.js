@@ -54,6 +54,7 @@ function adding(e) {
         elementitem.innerText=input.value;
         submitbtn.textContent = "Submit";
         flag=0;
+        itemsinput.value="";
         alert("item has been edited","normal")
     }
 
