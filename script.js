@@ -85,6 +85,9 @@ function editinginside(e){
     //here elementitem should have globalscope as you are not passing it to add function but add function has to use it
     elementitem=e.currentTarget.parentElement.previousElementSibling;
     submitbtn.textContent = "edit";
+    setTimeout(()=>{
+        itemsinput.focus();
+    },100);
     flag=1;
     itemsinput="";
 }
