@@ -93,7 +93,7 @@ function editinginside(e){
     itemsinput.value=elementitem.innerText;
     setTimeout(()=>{
         itemsinput.select();
-    },100);
+    },10);
 }
 // the function called on clicking allclear button
 clear.addEventListener('click',()=>{
