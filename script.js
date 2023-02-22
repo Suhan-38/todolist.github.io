@@ -90,7 +90,7 @@ function editinginside(e){
         itemsinput.focus();
     },100);
     flag=1;
-    itemsinput.value="";
+    itemsinput.value=elementitem.innerText;
 }
 // the function called on clicking allclear button
 clear.addEventListener('click',()=>{
