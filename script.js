@@ -84,7 +84,6 @@ function deleteiteminside(e){
 function editinginside(e){
     //here elementitem should have globalscope as you are not passing it to add function but add function has to use it
     elementitem=e.currentTarget.parentElement.previousElementSibling;
-    itemsinput.focus();
     submitbtn.textContent = "edit";
     flag=1;
     itemsinput="";
